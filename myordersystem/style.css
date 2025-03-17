@@ -6,12 +6,37 @@ body {
     background-color: #f4f4f4;
 }
 
+/* 在 header 中添加位置 */
 header {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 15px;
+    position: relative; /* 讓裡面的元素能夠相對定位 */
 }
+
+.auth-buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.auth-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-btn:hover {
+    background-color: #45a049;
+    color: white;
+}
+
 
 button {
     padding: 10px 20px;
