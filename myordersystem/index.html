@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>點餐系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>菜單</h1>
+        <button id="cart-btn">查看購物車 (0)</button>
+    </header>
+
+    <main>
+        <section id="menu">
+            <div class="menu-item" data-id="1">
+                <img src="images/dish1.jpg" alt="菜品1">
+                <h3>菜品 1</h3>
+                <p>價格：NT$ 150</p>
+                <button class="add-to-cart-btn">添加到購物車</button>
+            </div>
+            <div class="menu-item" data-id="2">
+                <img src="images/dish2.jpg" alt="菜品2">
+                <h3>菜品 2</h3>
+                <p>價格：NT$ 200</p>
+                <button class="add-to-cart-btn">添加到購物車</button>
+            </div>
+            <div class="menu-item" data-id="3">
+                <img src="images/dish3.jpg" alt="菜品3">
+                <h3>菜品 3</h3>
+                <p>價格：NT$ 120</p>
+                <button class="add-to-cart-btn">添加到購物車</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart" class="cart">
+        <h2>購物車</h2>
+        <ul id="cart-items"></ul>
+        <p id="total-price">總金額：NT$ 0</p>
+        <button id="checkout-btn">結帳</button>
+        <button id="close-cart-btn">關閉</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
